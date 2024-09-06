@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <main>
+      <h2 id="clock"></h2>
+      <form id="login-form" class="hidden">
+        <span>What is your name?</span>
+        <input type="text" required maxlength="15" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <span>What is your main goal for today?</span>
+        <input type="text" placeholder="" required maxlength="25" />
+      </form>
+    </main>
+
+    <footer>
+      <div id="weather">
+        <span> </span>
+        <span> </span>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="todo-toggle">
+        <button>ToDo</button>
+      </div>
+      <ul id="todo-list" class="hidden"></ul>
+    </footer>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/config.js"></script>
+  </body>
+</html>
